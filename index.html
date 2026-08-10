@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ALT-FIX TECHNOLOGY | Laptop & Desktop Sales & Service</title>
+
+<meta name="description"
+content="ALT-FIX TECHNOLOGY - Laptop Desktop Sales & Service. Computer repair, screen replacement, keyboard replacement, RAM and SSD upgrades.">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #071b3a;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    width: 100%;
+    background: #031b3d;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =========================
+   SERVICES
+========================= */
+
+.services {
+    padding: 65px 6%;
+    background: #f7f9fc;
+    text-align: center;
+}
+
+.section-label {
+    color: #0867df;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: 38px;
+    color: #071b3a;
+    margin-bottom: 10px;
+}
+
+.section-line {
+    width: 65px;
+    height: 3px;
+    background: #0867df;
+    margin: 0 auto 40px;
+}
+
+.service-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 22px;
+}
+
+.service-card {
+    background: #ffffff;
+    padding: 28px 18px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.14);
+}
+
+.service-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #071b3a;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* =========================
+   WHY CHOOSE US
+========================= */
+
+.features {
+    background: #031b3d;
+    color: white;
+    padding: 30px 6%;
+}
+
+.feature-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-right: 1px solid rgba(255,255,255,0.25);
+    padding-right: 20px;
+}
+
+.feature:last-child {
+    border-right: none;
+}
+
+.feature-icon {
+    width: 55px;
+    height: 55px;
+    min-width: 55px;
+    border: 2px solid #1682ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+}
+
+.feature h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.feature p {
+    color: #d6e3f5;
+    font-size: 13px;
+}
+
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 80px 6%;
+    background: #ffffff;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+.about-label {
+    color: #0867df;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.about h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    color: #071b3a;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #555;
+    margin-bottom: 18px;
+}
+
+.about-button {
+    display: inline-block;
+    background: #0867df;
+    color: white;
+    text-decoration: none;
+    padding: 13px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.about-button:hover {
+    background: #0053b8;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #031b3d;
+    color: white;
+    padding: 55px 6% 20px;
+}
+
+.footer-grid {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 50px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.logo-circle {
+    width: 65px;
+    height: 65px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.footer-brand h2 {
+    font-size: 22px;
+}
+
+.footer-brand p {
+    color: #d8e3f3;
+    font-size: 14px;
+}
+
+.footer-column h3 {
+    margin-bottom: 18px;
+    font-size: 18px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 9px;
+}
+
+.footer-column a {
+    color: #d8e3f3;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column a:hover {
+    color: #ffffff;
+}
+
+.contact-item {
+    margin-bottom: 12px;
+}
+
+.contact-item a {
+    font-size: 14px;
+}
+
+.copyright {
+    max-width: 1200px;
+    margin: 35px auto 0;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.2);
+    text-align: center;
+    color: #c9d6e8;
+    font-size: 13px;
+}
+
+/* =========================
+   FLOATING WHATSAPP
+========================= */
+
+.whatsapp {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #25d366;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 29px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    z-index: 999;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 1000px) {
+
+    .service-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature {
+        border-right: none;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .services {
+        padding: 45px 5%;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        max-width: 400px;
+        margin: auto;
+        width: 100%;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .feature {
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.15);
+        padding-bottom: 18px;
+    }
+
+    .feature:last-child {
+        border-bottom: none;
+    }
+
+    .about {
+        padding: 55px 5%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about h2 {
+        font-size: 30px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .whatsapp {
+        right: 15px;
+        bottom: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     HERO COVER IMAGE
+========================= -->
+
+<section class="hero" id="home">
+
+    <!--
+        Put your AFT cover image in the same folder
+        and name it: aft-cover.jpg
+    -->
+
+    <img src="aft-cover.jpg"
+         alt="ALT-FIX TECHNOLOGY Laptop Desktop Sales and Service">
+
+</section>
+
+
+<!-- =========================
+     SERVICES
+========================= -->
+
+<section class="services" id="services">
+
+    <div class="section-label">
+        WHAT WE DO
+    </div>
+
+    <h2 class="section-title">
+        Our Expert Services
+    </h2>
+
+    <div class="section-line"></div>
+
+    <div class="service-grid">
+
+        <div class="service-card">
+            <div class="service-icon">💻</div>
+            <h3>Laptop Repair</h3>
+            <p>
+                All kinds of laptop hardware &
+                software issues repaired.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Desktop Repair</h3>
+            <p>
+                Fast & reliable desktop repair
+                services.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">🖥️</div>
+            <h3>Screen Replacement</h3>
+            <p>
+                Laptop screen replacement
+                with original quality.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">⌨️</div>
+            <h3>Keyboard Replacement</h3>
+            <p>
+                Laptop keyboard repair &
+                replacement.
+            </p>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon">💾</div>
+            <h3>RAM / SSD Upgrade</h3>
+            <p>
+                Upgrade RAM & SSD for
+                better performance.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHY CHOOSE US
+========================= -->
+
+<section class="features" id="why">
+
+    <div class="feature-grid">
+
+        <div class="feature">
+            <div class="feature-icon">✓</div>
+            <div>
+                <h3>Trusted Service</h3>
+                <p>Quality Service Guaranteed</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">★</div>
+            <div>
+                <h3>Experienced Technicians</h3>
+                <p>Skilled & Certified Experts</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">◷</div>
+            <div>
+                <h3>Quick Turnaround</h3>
+                <p>Fast & On-time Delivery</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">♢</div>
+            <div>
+                <h3>Warranty Support</h3>
+                <p>Service Warranty Available</p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ABOUT US
+========================= -->
+
+<section class="about" id="about">
+
+    <div class="about-container">
+
+        <div>
+            <img
+                class="about-image"
+                src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=1200&q=85"
+                alt="Computer repair technician">
+        </div>
+
+        <div>
+
+            <div class="about-label">
+                ABOUT US
+            </div>
+
+            <h2>
+                We Provide The Best
+                Computer Repair Services
+            </h2>
+
+            <p>
+                At ALT-FIX TECHNOLOGY, customer satisfaction
+                is our top priority.
+            </p>
+
+            <p>
+                We provide reliable, fast and quality solutions
+                for all your laptop and desktop problems.
+                Our experienced technicians ensure your devices
+                are in the best hands.
+            </p>
+
+            <a href="#contact" class="about-button">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer id="contact">
+
+    <div class="footer-grid">
+
+        <!-- COMPANY -->
+
+        <div class="footer-brand">
+
+            <div class="footer-logo">
+
+                <div class="logo-circle">
+                    AFT
+                </div>
+
+                <div>
+                    <h2>ALT-FIX TECHNOLOGY</h2>
+                    <p>
+                        Laptop Desktop Sales & Service
+                    </p>
+                </div>
+
+            </div>
+
+            <p>
+                All Computer Repairs & Services Done Here
+            </p>
+
+        </div>
+
+
+        <!-- QUICK LINKS -->
+
+        <div class="footer-column">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#about">About Us</a>
+                </li>
+
+                <li>
+                    <a href="#why">Why Choose Us</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- CONTACT -->
+
+        <div class="footer-column">
+
+            <h3>Contact Us</h3>
+
+            <div class="contact-item">
+                📞
+                <a href="tel:+917871795084">
+                    +91-7871795084
+                </a>
+            </div>
+
+            <div class="contact-item">
+                📞
+                <a href="tel:+916381747787">
+                    +91-6381747787
+                </a>
+            </div>
+
+            <div class="contact-item">
+                💬
+                <a href="https://wa.me/918838727542">
+                    +91-8838727542
+                </a>
+            </div>
+
+            <div class="contact-item">
+                ✉️
+                <a href="mailto:altfixtechnology@gmail.com">
+                    altfixtechnology@gmail.com
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 ALT-FIX TECHNOLOGY.
+        All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/918838727542?text=Hello%20ALT-FIX%20TECHNOLOGY%2C%20I%20need%20computer%20service."
+    target="_blank"
+    aria-label="Chat on WhatsApp">
+
+    💬
+
+</a>
+
+</body>
+</html>
